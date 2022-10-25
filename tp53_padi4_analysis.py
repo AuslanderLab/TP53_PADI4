@@ -237,7 +237,7 @@ def main():
     clin=clin.fillna(0)
 
     #cibersort deconv
-    ciber=pd.read_csv('/Users/nauslander/Desktop/collabs/Murphy/tcga_data/tcga_cybersort.csv',index_col='SampleID')
+    ciber=pd.read_csv('tcga_data/tcga_cybersort.csv',index_col='SampleID')
     ciber=ciber.T
     ciber = ciber.loc[:, ~ciber.columns.duplicated()].copy()
     ciber=ciber.T
